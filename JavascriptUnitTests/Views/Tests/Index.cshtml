@@ -1,19 +1,8 @@
-﻿@{
-    Layout = null;
-}
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Unit tests</title>
-    <link rel="shortcut icon" type="image/png" href="~/Content/jasmine/lib/jasmine-2.2.0/jasmine_favicon.png">
-    <link rel="stylesheet" type="text/css" href="~/Content/jasmine/lib/jasmine-2.2.0/jasmine.css">
-
+﻿@section scripts
+{
     <script type="text/javascript" src="~/Content/jasmine/lib/jasmine-2.2.0/jasmine.js"></script>
     <script type="text/javascript" src="~/Content/jasmine/lib/jasmine-2.2.0/jasmine-html.js"></script>
     <script type="text/javascript" src="~/Content/jasmine/lib/jasmine-2.2.0/boot.js"></script>
-</head>
-<body>
-@Scripts.Render("~/bundles/app")
-@Scripts.Render("~/bundles/tests")
-</body>
-</html>
+
+    <script type="text/javascript" src="~/Scripts/app/tests/car-service.js"></script>    
+}

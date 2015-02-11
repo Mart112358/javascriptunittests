@@ -6,11 +6,16 @@
     });
 
     it("Calculates the total weigth for cars", function () {
+        // Arrange
         var cars = [
             { Number: 100, Weight: 10 },
             { Number: 100, Weight: 20 }
         ];
 
-        expect(carService.calculateTotalWeight(cars)).toEqual(30);
+        // Act
+        var actual = carService.calculateTotalWeight(cars);
+
+        // Assert
+        expect(actual).toEqual(30);
     });
 });
