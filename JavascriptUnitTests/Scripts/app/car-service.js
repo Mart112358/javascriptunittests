@@ -1,18 +1,18 @@
-﻿var CarService = function (container) {
+﻿var CarService = function () {
     var pubs = {};
 
-    function calculateTotalWeight(cars) {
+    pubs.calculateTotalWeight = function(cars) {
         var totalWeight = 0;
 
-        cars.forEach(function (car) {
+        cars.forEach(function(car) {
             totalWeight += car.Weight;
         });
 
         return totalWeight;
-    }
+    };
 
-    pubs.loadCars = function() {
-        return $.ajax("/api/cars").then(function (cars) {
+    pubs.loadCars = function(container) {
+        return $.ajax("/api/cars").then(function(cars) {
             var table = $("<table class='table table-bordered table-condensed table-hover table-striped'>");
             var thead = $("<thead>");
             var tbody = $("<tbody>");
@@ -22,7 +22,7 @@
 
             thead.append("<tr><th>Number</th><th>Weight (tons)</th></tr>");
 
-            cars.forEach(function (car) {
+            cars.forEach(function(car) {
                 var row = $("<tr>");
                 row.append("<td>" + car.Number + "</td>");
                 row.append("<td>" + car.Weight + "</td>");
@@ -40,7 +40,7 @@
 
             container.append(table);
         });
-    }
+    };
 
     return pubs;
 };

@@ -126,6 +126,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\TestsController.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Controllers\api\CarsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -273,21 +274,22 @@
     <Content Include="Content\bootstrap\badges.less" />
     <Content Include="Content\bootstrap\alerts.less" />
     <Content Include="Content\site.less" />
-    <Content Include="Scripts\jasmine\MIT.LICENSE" />
+    <Content Include="Scripts\app\tests\car-service.js" />
+    <Content Include="Content\jasmine\MIT.LICENSE" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jasmine\lib\jasmine-2.2.0\boot.js" />
-    <Content Include="Scripts\jasmine\lib\jasmine-2.2.0\console.js" />
-    <Content Include="Scripts\jasmine\lib\jasmine-2.2.0\jasmine-html.js" />
-    <Content Include="Scripts\jasmine\lib\jasmine-2.2.0\jasmine.css" />
-    <Content Include="Scripts\jasmine\lib\jasmine-2.2.0\jasmine.js" />
-    <Content Include="Scripts\jasmine\lib\jasmine-2.2.0\jasmine_favicon.png" />
-    <Content Include="Scripts\jasmine\SpecRunner.html" />
-    <Content Include="Scripts\jasmine\spec\PlayerSpec.js" />
-    <Content Include="Scripts\jasmine\spec\SpecHelper.js" />
-    <Content Include="Scripts\jasmine\src\Player.js" />
-    <Content Include="Scripts\jasmine\src\Song.js" />
+    <Content Include="Content\jasmine\lib\jasmine-2.2.0\boot.js" />
+    <Content Include="Content\jasmine\lib\jasmine-2.2.0\console.js" />
+    <Content Include="Content\jasmine\lib\jasmine-2.2.0\jasmine-html.js" />
+    <Content Include="Content\jasmine\lib\jasmine-2.2.0\jasmine.css" />
+    <Content Include="Content\jasmine\lib\jasmine-2.2.0\jasmine.js" />
+    <Content Include="Content\jasmine\lib\jasmine-2.2.0\jasmine_favicon.png" />
+    <Content Include="Content\jasmine\SpecRunner.html" />
+    <Content Include="Content\jasmine\spec\PlayerSpec.js" />
+    <Content Include="Content\jasmine\spec\SpecHelper.js" />
+    <Content Include="Content\jasmine\src\Player.js" />
+    <Content Include="Content\jasmine\src\Song.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
     <Content Include="Scripts\jquery-1.9.0.min.map" />
@@ -316,6 +318,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Tests\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -6,8 +6,8 @@
 {
     <script>
         $(function () {
-            var carService = new CarService($("#container"));
-            carService.loadCars();
+            var carService = new CarService();
+            carService.loadCars($("#container"));
         });
     </script>
 }

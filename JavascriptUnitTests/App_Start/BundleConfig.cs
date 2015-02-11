@@ -24,7 +24,10 @@ namespace JavascriptUnitTests
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
-                        "~/Scripts/app/car-service.js"));
+                "~/Scripts/app/car-service.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/tests").Include(
+                "~/Scripts/app/tests/car-service.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 
