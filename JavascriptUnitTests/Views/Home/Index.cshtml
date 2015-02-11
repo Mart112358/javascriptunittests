@@ -1,0 +1,13 @@
+﻿<div id="container" class="container-fluid">
+    <h1>Cars</h1>
+</div>
+
+@section scripts
+{
+    <script>
+        $(function () {
+            var carService = new CarService($("#container"));
+            carService.loadCars();
+        });
+    </script>
+}
