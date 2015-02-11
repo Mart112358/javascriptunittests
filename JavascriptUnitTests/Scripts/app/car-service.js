@@ -33,7 +33,7 @@
 
             var rowFoot = $("<tr>");
             rowFoot.append("<td><strong>Total</strong></td>");
-            rowFoot.append("<td><u>" + calculateTotalWeight(cars) + "</u></td>");
+            rowFoot.append("<td><u>" + pubs.calculateTotalWeight(cars) + "</u></td>");
 
             tfoot.append(rowFoot);
             table.append(tfoot);
