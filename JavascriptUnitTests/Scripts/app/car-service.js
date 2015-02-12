@@ -11,8 +11,18 @@
         return totalWeight;
     };
 
-    pubs.loadCars = function(container) {
-        return $.ajax("/api/cars").then(function(cars) {
+    pubs.getCars = function() {
+        return $.ajax("/api/cars");
+    };
+
+    pubs.getCarCount = function () {
+        return pubs.getCars().then(function (cars) {
+            return cars.length;
+        });
+    };
+
+    pubs.displayCars = function(container) {
+        return pubs.getCars().then(function(cars) {
             var table = $("<table class='table table-bordered table-condensed table-hover table-striped'>");
             var thead = $("<thead>");
             var tbody = $("<tbody>");
